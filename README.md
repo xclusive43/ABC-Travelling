@@ -11,7 +11,6 @@
 <img  src="images/8.jpg" width="160" heigth="150">
 <img  src="images/9.jpg" width="160" heigth="150">
 <img  src="images/10.jpg" width="160" heigth="150">
-<img  src="images/11.jpg" width="160" heigth="150">
-<img  src="images/12.jpg" width="160" heigth="150">
+ 
  
  
