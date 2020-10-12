@@ -1,5 +1,5 @@
 # X-Travelling
-a buy ticketing app for hassle free your life.
+<h3>A Bus ticketing app for hassle free Ticketing in Queue...<h3>
 
  
 <img  src="images/1.jpg" width="160" heigth="150"> <img  src="images/2.jpg" width="160" heigth="150">
