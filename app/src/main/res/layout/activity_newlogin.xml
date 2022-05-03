@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+
+        android:background="@color/gray"
+        tools:context=".newlogin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/GoBackIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+
+            <ProgressBar
+                android:id="@+id/progress2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Log In"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:textColor="@color/lightwhite"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_marginTop="40dp">
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/loginprofile"
+                    android:tint="@color/red"
+                    />
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintAnimationEnabled="true"
+                app:hintTextColor="@color/blackcolor"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emaillogin"
+                    android:layout_width="280dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:hint="Email"
+                    android:textSize="15dp"
+                    android:elevation="26dp"
+                    android:fontFamily="@font/roboto_condensed_bold"
+
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:padding="10dp"
+                    android:background="@drawable/btn"
+
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextColor="@color/blackcolor"
+                app:hintAnimationEnabled="true"
+                app:passwordToggleEnabled="true"
+
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:id="@+id/passwordlogin"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:password="true"
+                    android:textSize="15dp" />
+
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/loginbtn"
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:elevation="16dp"
+               android:background="@drawable/border12"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="@color/whitecolor"
+                android:textSize="14dp" />
+
+
+
+            <Button
+                android:id="@+id/backsignin"
+                android:layout_width="150dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/border12"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="Register here"
+                android:textAllCaps="false"
+                android:textColor="@color/whitecolor"
+                android:textSize="13dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forget Password"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/whitecolor"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>

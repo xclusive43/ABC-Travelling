@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".payment_original">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/l1"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:titleMarginStart="130dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x Travelling"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:textColor="@color/lightwhite"
+            android:textSize="18sp"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/l1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aclonica"
+
+                    android:text="Payment Page"
+                    android:textColor="#0E7836"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_light"
+
+                    android:text="We provide Secure Payment options"
+                    android:textColor="#CDC6C6" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:elevation="200dp"
+                        android:fadingEdgeLength="12dp"
+                        android:src="@drawable/upilogo" />
+
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/maestro" />
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/visa" />
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mastercard" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+
+                android:layout_margin="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+                app:layout_constraintVertical_bias="0.152">
+
+                <EditText
+                    android:id="@+id/amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/custombtn"
+                    android:ems="15"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:gravity="center"
+                    android:hint="Total Amount"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/gray"
+                    android:textColorHint="@color/gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:background="@drawable/custombtn"
+                    android:padding="10dp">
+
+                    <CheckBox
+                        android:id="@+id/debitcard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:fontFamily="@font/roboto_condensed_bold"
+                        android:text="Debit card"
+                        android:textColor="@color/whitecolor" />
+
+                    <CheckBox
+                        android:id="@+id/creditcard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="9"
+                        android:fontFamily="@font/roboto_condensed_bold"
+                        android:text="Credit Card"
+                        android:textColor="@color/whitecolor" />
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/cardnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/custombtn"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:gravity="center"
+                    android:hint="16 Digit Card Number"
+                    android:inputType="number"
+                    android:textColor="@color/whitecolor"
+                    android:textColorHint="@color/whitecolor"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/expdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/custombtn"
+                    android:ems="15"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:gravity="center"
+                    android:hint="Expire Date"
+                    android:inputType="date"
+                    android:textColor="@color/whitecolor"
+                    android:textColorHint="@color/whitecolor" />
+
+                <EditText
+                    android:id="@+id/cvv"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/custombtn"
+                    android:ems="15"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:gravity="center"
+                    android:hint="CVV"
+                    android:inputType="number"
+                    android:textColor="@color/whitecolor"
+                    android:textColorHint="@color/whitecolor" />
+
+                <EditText
+                    android:id="@+id/accountname"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/custombtn"
+                    android:ems="15"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:gravity="center"
+                    android:hint="Card Holder Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/whitecolor"
+                    android:textColorHint="@color/whitecolor" />
+
+                <Button
+
+                    android:id="@+id/payment"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/custombuttom1"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:padding="10dp"
+                    android:text="Proceed Transaction"
+                    android:textColor="@color/whitecolor"
+                     />
+
+                <ProgressBar
+                    android:id="@+id/progressbar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mastercard"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">X Travelling</string>
+    <string name="book_now">Book Now</string>
+    <string name="draweropen">draweropen</string>
+    <string name="drawerclose">drawerclose</string>
+    <string name="username">username1</string>
+    <string name="password">password1</string>
+
+    <string-array name="city">
+        <item> </item>
+        <item>Shillong</item>
+        <item>Tura</item>
+        <item>Guwahati</item>
+    </string-array>
+</resources>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    tools:context=".newregister"
+
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@color/red"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:padding="8dp"
+                    android:text="x Traveling"
+                    android:textColor="@color/blackcolor"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progress1"
+                android:layout_width="57dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout9"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="76dp"
+                android:background="@drawable/btn"
+                android:ems="10"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:hint="User Name"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout9" />
+
+            <EditText
+
+                android:id="@+id/phonenumber"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/btn"
+                android:ems="10"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:hint="Mobile Number"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/btn"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/age">
+
+
+                <RadioButton
+                    android:id="@+id/male"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:padding="0dp"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:padding="0dp"
+                    android:text="Female" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/btn"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:hint="Age"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phonenumber" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/btn"
+                android:ems="10"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:hint="Address"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/btn"
+                android:ems="10"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/address" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:hintAnimationEnabled="true"
+                app:hintTextColor="@color/blackcolor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email"
+
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/password"
+                    android:layout_width="280dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn"
+                    android:ems="10"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:password="true"
+                    android:textSize="15dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/p2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:hintAnimationEnabled="true"
+                app:hintTextColor="@color/blackcolor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/password1"
+
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/cpass"
+                    android:layout_width="280dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn"
+                    android:ems="10"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:hint="Confirm password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:password="true"
+                    android:textSize="15dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border12"
+                android:ems="10"
+
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="Register"
+                android:textColor="@color/whitecolor"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/p2"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/login1"
+                android:layout_width="150dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/border12"
+                android:ems="10"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:padding="2dp"
+                android:text="login"
+                android:textColor="@color/whitecolor"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.687"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn1"
+                tools:ignore="MissingConstraints" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

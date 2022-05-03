@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".ticketing3">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:titleMarginStart="130dp"
+        app:titleTextColor="@color/whitecolor">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:text="Booked Now"
+            android:padding="10dp"
+            android:layout_gravity="center"
+
+            android:textColor="@color/lightwhite"
+            android:textSize="18sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/seats"
+                android:orientation="vertical"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@drawable/topticket"
+                    android:backgroundTint="@color/red"
+                    android:gravity="center" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:background="@color/lightwhite"
+                    android:elevation="20dp"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        app:cardBackgroundColor="@color/gray"
+                        app:cardElevation="0dp"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/headtopicon"
+                            android:tint="@color/red"/>
+
+                        <TextView
+                            android:id="@+id/busname2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/aclonica"
+                            android:gravity="center"
+                            android:textColor="@color/ic_launcher_background"
+                            android:textSize="18sp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:background="@color/gray"
+
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto"
+                                        android:text="From  : "
+                                        android:textColor="@color/lightwhite"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/from2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto"
+                                        android:textColor="@color/lightwhite"
+
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto"
+                                        android:text="To       : "
+                                        android:textColor="@color/lightwhite"
+                                        android:textSize="12sp" />/>
+
+                                    <TextView
+                                        android:id="@+id/to2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto"
+
+                                        android:textColor="@color/lightwhite"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:padding="2dp">
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto"
+                                        android:text="Date  : "
+                                        android:textColor="@color/lightwhite"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/date2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto"
+                                        android:textColor="@color/ic_launcher_background"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+
+                                android:padding="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto"
+                                        android:text="Timing        : "
+                                        android:textColor="@color/lightwhite"
+                                        android:textSize="12sp" />/>
+
+                                    <TextView
+                                        android:id="@+id/timing2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto"
+                                        android:textColor="@color/lightwhite"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto"
+                                        android:text="Seats/No.  : "
+                                        android:textColor="@color/lightwhite"
+                                        android:textSize="12sp" />
+
+
+                                    <TextView
+                                        android:id="@+id/seatno2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto"
+                                        android:textColor="@color/lightwhite"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:padding="2dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto"
+                                        android:text="Total bus Fare : Rs."
+                                        android:textColor="@color/lightwhite"
+                                        android:textSize="12sp" />
+
+
+                                    <TextView
+                                        android:id="@+id/busfare2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto"
+                                        android:textColor="@color/lightwhite"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="300dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="2dp"
+                                android:background="@color/gray"
+                                android:gravity="center"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="Name*  : "
+                                    android:textColor="@color/whitecolor"
+
+                                    android:textSize="12sp" />
+
+
+                                <EditText
+                                    android:id="@+id/pass1"
+                                    android:layout_width="180dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto"
+                                    android:textColor="@color/whitecolor"
+                                    android:textSize="12sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="300dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="2dp"
+                                android:background="@color/gray"
+                                android:gravity="center"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="Mobile* : "
+                                    android:textColor="@color/whitecolor"
+
+                                    android:textSize="12sp" />
+
+                                <EditText
+                                    android:id="@+id/moblie1"
+                                    android:layout_width="180dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto"
+                                    android:inputType="number"
+                                    android:textColor="@color/whitecolor"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="300dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="2dp"
+                                android:background="@color/gray"
+                                android:gravity="center"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="Age*     : "
+                                    android:textColor="@color/whitecolor"
+
+                                    android:textSize="12sp" />
+
+                                <EditText
+                                    android:id="@+id/age1"
+                                    android:layout_width="180dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto"
+                                    android:inputType="number"
+                                    android:textColor="@color/whitecolor"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="300dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="2dp"
+                                android:background="@color/gray"
+                                android:gravity="center"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="Gender* : "
+                                    android:textColor="@color/whitecolor"
+
+                                    android:textSize="12sp" />
+
+                                <EditText
+                                    android:id="@+id/gender1"
+                                    android:layout_width="180dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto"
+                                    android:textColor="@color/whitecolor"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="300dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="2dp"
+                                android:background="@color/gray"
+                                android:gravity="center"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="Address* : "
+                                    android:textColor="@color/whitecolor"
+                                    android:textSize="12sp" />
+
+                                <EditText
+                                    android:id="@+id/address1"
+                                    android:layout_width="180dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto"
+                                    android:textColor="@color/whitecolor"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@drawable/bottomticket"
+                    android:backgroundTint="@color/red"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                android:gravity="center"
+                android:padding="1dp"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout13">
+
+                <Button
+                    android:id="@+id/pay1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custombuttom1"
+                    android:elevation="100dp"
+                    android:fontFamily="@font/aclonica"
+                    android:text="Pay Now"
+                    android:textColor="@color/whitecolor" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/pro1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="28dp"
+                android:outlineAmbientShadowColor="@color/blackcolor"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/t1" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
